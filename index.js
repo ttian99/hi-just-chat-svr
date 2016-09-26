@@ -76,6 +76,6 @@ function sendMsg(socket) {
 	socket.on('message', function(obj) {
 		//向所有客户端广播发布的消息
 		io.emit('message', obj);
-		console.log(obj.username + '说：' + obj.content);
+		console.log(obj.username + '说：' + obj.msg);
 	});
 }
